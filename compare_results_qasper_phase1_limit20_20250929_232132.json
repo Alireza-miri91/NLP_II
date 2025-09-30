@@ -1,0 +1,196 @@
+{
+  "config": {
+    "split": "train",
+    "k": 5,
+    "limit": 20,
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "modes": [
+      "embeddings",
+      "bm25",
+      "tfidf",
+      "lsi",
+      "dpr"
+    ],
+    "granularities": [
+      "paragraph",
+      "sentence"
+    ],
+    "include_answerability": true
+  },
+  "paragraph_metrics": {
+    "embeddings": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.03157894736842106,
+          "recall@k": 0.15789473684210525,
+          "f1@k": 0.05263157894736842,
+          "evaluated_questions": 19
+        },
+        "n_questions": 20
+      },
+      "sentence": {
+        "metrics": {
+          "precision@k": 0.010526315789473684,
+          "recall@k": 0.05263157894736842,
+          "f1@k": 0.01754385964912281,
+          "evaluated_questions": 19
+        },
+        "n_questions": 20
+      }
+    },
+    "bm25": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.042105263157894736,
+          "recall@k": 0.18421052631578946,
+          "f1@k": 0.06766917293233084,
+          "evaluated_questions": 19
+        },
+        "n_questions": 20
+      },
+      "sentence": {
+        "metrics": {
+          "precision@k": 0.05263157894736842,
+          "recall@k": 0.21052631578947367,
+          "f1@k": 0.08270676691729324,
+          "evaluated_questions": 19
+        },
+        "n_questions": 20
+      }
+    },
+    "tfidf": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.021052631578947368,
+          "recall@k": 0.10526315789473684,
+          "f1@k": 0.03508771929824562,
+          "evaluated_questions": 19
+        },
+        "n_questions": 20
+      },
+      "sentence": {
+        "metrics": {
+          "precision@k": 0.05263157894736842,
+          "recall@k": 0.21052631578947367,
+          "f1@k": 0.08270676691729324,
+          "evaluated_questions": 19
+        },
+        "n_questions": 20
+      }
+    },
+    "lsi": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "f1@k": 0.0,
+          "evaluated_questions": 19
+        },
+        "n_questions": 20
+      },
+      "sentence": {
+        "metrics": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "f1@k": 0.0,
+          "evaluated_questions": 19
+        },
+        "n_questions": 20
+      }
+    },
+    "dpr": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.03157894736842106,
+          "recall@k": 0.15789473684210525,
+          "f1@k": 0.05263157894736842,
+          "evaluated_questions": 19
+        },
+        "n_questions": 20
+      },
+      "sentence": {
+        "metrics": {
+          "precision@k": 0.03157894736842106,
+          "recall@k": 0.15789473684210525,
+          "f1@k": 0.05263157894736842,
+          "evaluated_questions": 19
+        },
+        "n_questions": 20
+      }
+    }
+  },
+  "granularity_compare": {
+    "embeddings": {
+      "mode": "embeddings",
+      "n": 20,
+      "paragraph_hit": 0.4,
+      "sentence_hit": 0.45
+    },
+    "bm25": {
+      "mode": "bm25",
+      "n": 20,
+      "paragraph_hit": 0.5,
+      "sentence_hit": 0.55
+    },
+    "tfidf": {
+      "mode": "tfidf",
+      "n": 20,
+      "paragraph_hit": 0.4,
+      "sentence_hit": 0.55
+    },
+    "lsi": {
+      "mode": "lsi",
+      "n": 20,
+      "paragraph_hit": 0.05,
+      "sentence_hit": 0.05
+    },
+    "dpr": {
+      "mode": "dpr",
+      "n": 20,
+      "paragraph_hit": 0.4,
+      "sentence_hit": 0.4
+    }
+  },
+  "lex_vs_sem": {
+    "lexical_win": 3,
+    "semantic_win": 0,
+    "both_win": 8,
+    "both_lose": 9,
+    "total": 20
+  },
+  "answerability": {
+    "metrics": {
+      "overall": {
+        "total_questions": 20,
+        "accuracy": 0.25,
+        "macro_f1": 0.2,
+        "weighted_f1": 0.4,
+        "average_confidence": 0.35297123052587265
+      },
+      "answerable": {
+        "count": 20,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "support": 20
+      },
+      "unanswerable": {
+        "count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "confusion_matrix": {
+        "true_negative": 5,
+        "false_positive": 15,
+        "false_negative": 0,
+        "true_positive": 0
+      }
+    },
+    "n_questions": 20
+  },
+  "started_at": 1759184243.3827763,
+  "finished_at": 1759186029.5511868,
+  "duration_sec": 1786.168410539627
+}

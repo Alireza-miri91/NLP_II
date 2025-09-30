@@ -1,0 +1,47 @@
+{
+  "config": {
+    "split": "train",
+    "k": 3,
+    "limit": 10,
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "modes": [
+      "tfidf"
+    ],
+    "granularities": [
+      "paragraph"
+    ],
+    "include_answerability": false
+  },
+  "paragraph_metrics": {
+    "tfidf": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "f1@k": 0.0,
+          "evaluated_questions": 9
+        },
+        "n_questions": 10
+      }
+    }
+  },
+  "granularity_compare": {
+    "tfidf": {
+      "mode": "tfidf",
+      "n": 10,
+      "paragraph_hit": 0.2,
+      "sentence_hit": 0.5
+    }
+  },
+  "lex_vs_sem": {
+    "lexical_win": 3,
+    "semantic_win": 0,
+    "both_win": 2,
+    "both_lose": 5,
+    "total": 10
+  },
+  "answerability": null,
+  "started_at": 1759155506.785002,
+  "finished_at": 1759155908.6104038,
+  "duration_sec": 401.8254017829895
+}

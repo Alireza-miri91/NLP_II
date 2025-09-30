@@ -1,0 +1,196 @@
+{
+  "config": {
+    "split": "train",
+    "k": 5,
+    "limit": 200,
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "modes": [
+      "embeddings",
+      "bm25",
+      "tfidf",
+      "lsi",
+      "dpr"
+    ],
+    "granularities": [
+      "paragraph",
+      "sentence"
+    ],
+    "include_answerability": true
+  },
+  "paragraph_metrics": {
+    "embeddings": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.020359281437125752,
+          "recall@k": 0.0718562874251497,
+          "f1@k": 0.02997900303289525,
+          "evaluated_questions": 167
+        },
+        "n_questions": 200
+      },
+      "sentence": {
+        "metrics": {
+          "precision@k": 0.02634730538922156,
+          "recall@k": 0.09181636726546906,
+          "f1@k": 0.038144490240298624,
+          "evaluated_questions": 167
+        },
+        "n_questions": 200
+      }
+    },
+    "bm25": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.02754491017964072,
+          "recall@k": 0.0907185628742515,
+          "f1@k": 0.03940776455746516,
+          "evaluated_questions": 167
+        },
+        "n_questions": 200
+      },
+      "sentence": {
+        "metrics": {
+          "precision@k": 0.017964071856287425,
+          "recall@k": 0.04810379241516966,
+          "f1@k": 0.023659175156181145,
+          "evaluated_questions": 167
+        },
+        "n_questions": 200
+      }
+    },
+    "tfidf": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.015568862275449102,
+          "recall@k": 0.04161676646706587,
+          "f1@k": 0.020071113184885643,
+          "evaluated_questions": 167
+        },
+        "n_questions": 200
+      },
+      "sentence": {
+        "metrics": {
+          "precision@k": 0.025149700598802397,
+          "recall@k": 0.07904191616766466,
+          "f1@k": 0.03472794670399461,
+          "evaluated_questions": 167
+        },
+        "n_questions": 200
+      }
+    },
+    "lsi": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.0011976047904191617,
+          "recall@k": 0.001996007984031936,
+          "f1@k": 0.0014970059880239522,
+          "evaluated_questions": 167
+        },
+        "n_questions": 200
+      },
+      "sentence": {
+        "metrics": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "f1@k": 0.0,
+          "evaluated_questions": 167
+        },
+        "n_questions": 200
+      }
+    },
+    "dpr": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.020359281437125752,
+          "recall@k": 0.0718562874251497,
+          "f1@k": 0.02997900303289525,
+          "evaluated_questions": 167
+        },
+        "n_questions": 200
+      },
+      "sentence": {
+        "metrics": {
+          "precision@k": 0.020359281437125752,
+          "recall@k": 0.0718562874251497,
+          "f1@k": 0.02997900303289525,
+          "evaluated_questions": 167
+        },
+        "n_questions": 200
+      }
+    }
+  },
+  "granularity_compare": {
+    "embeddings": {
+      "mode": "embeddings",
+      "n": 200,
+      "paragraph_hit": 0.25,
+      "sentence_hit": 0.315
+    },
+    "bm25": {
+      "mode": "bm25",
+      "n": 200,
+      "paragraph_hit": 0.38,
+      "sentence_hit": 0.365
+    },
+    "tfidf": {
+      "mode": "tfidf",
+      "n": 200,
+      "paragraph_hit": 0.33,
+      "sentence_hit": 0.34
+    },
+    "lsi": {
+      "mode": "lsi",
+      "n": 200,
+      "paragraph_hit": 0.105,
+      "sentence_hit": 0.09
+    },
+    "dpr": {
+      "mode": "dpr",
+      "n": 200,
+      "paragraph_hit": 0.25,
+      "sentence_hit": 0.25
+    }
+  },
+  "lex_vs_sem": {
+    "lexical_win": 38,
+    "semantic_win": 5,
+    "both_win": 53,
+    "both_lose": 104,
+    "total": 200
+  },
+  "answerability": {
+    "metrics": {
+      "overall": {
+        "total_questions": 200,
+        "accuracy": 0.29,
+        "macro_f1": 0.2842020364956145,
+        "weighted_f1": 0.33316261719931445,
+        "average_confidence": 0.3046011189054843
+      },
+      "answerable": {
+        "count": 176,
+        "precision": 0.9047619047619048,
+        "recall": 0.2159090909090909,
+        "f1": 0.3486238532110092,
+        "support": 176
+      },
+      "unanswerable": {
+        "count": 24,
+        "precision": 0.12658227848101267,
+        "recall": 0.8333333333333334,
+        "f1": 0.21978021978021978,
+        "support": 24
+      },
+      "confusion_matrix": {
+        "true_negative": 38,
+        "false_positive": 138,
+        "false_negative": 4,
+        "true_positive": 20
+      }
+    },
+    "n_questions": 200
+  },
+  "started_at": 1759193939.6995645,
+  "finished_at": 1759197576.3487146,
+  "duration_sec": 3636.649150133133
+}

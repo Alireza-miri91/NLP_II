@@ -1,0 +1,196 @@
+{
+  "config": {
+    "split": "train",
+    "k": 5,
+    "limit": 5,
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "modes": [
+      "embeddings",
+      "bm25",
+      "tfidf",
+      "lsi",
+      "dpr"
+    ],
+    "granularities": [
+      "paragraph",
+      "sentence"
+    ],
+    "include_answerability": true
+  },
+  "paragraph_metrics": {
+    "embeddings": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.04,
+          "recall@k": 0.2,
+          "f1@k": 0.06666666666666668,
+          "evaluated_questions": 5
+        },
+        "n_questions": 5
+      },
+      "sentence": {
+        "metrics": {
+          "precision@k": 0.04,
+          "recall@k": 0.2,
+          "f1@k": 0.06666666666666668,
+          "evaluated_questions": 5
+        },
+        "n_questions": 5
+      }
+    },
+    "bm25": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.08,
+          "recall@k": 0.3,
+          "f1@k": 0.12380952380952381,
+          "evaluated_questions": 5
+        },
+        "n_questions": 5
+      },
+      "sentence": {
+        "metrics": {
+          "precision@k": 0.08,
+          "recall@k": 0.3,
+          "f1@k": 0.12380952380952381,
+          "evaluated_questions": 5
+        },
+        "n_questions": 5
+      }
+    },
+    "tfidf": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "f1@k": 0.0,
+          "evaluated_questions": 5
+        },
+        "n_questions": 5
+      },
+      "sentence": {
+        "metrics": {
+          "precision@k": 0.04,
+          "recall@k": 0.2,
+          "f1@k": 0.06666666666666668,
+          "evaluated_questions": 5
+        },
+        "n_questions": 5
+      }
+    },
+    "lsi": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "f1@k": 0.0,
+          "evaluated_questions": 5
+        },
+        "n_questions": 5
+      },
+      "sentence": {
+        "metrics": {
+          "precision@k": 0.0,
+          "recall@k": 0.0,
+          "f1@k": 0.0,
+          "evaluated_questions": 5
+        },
+        "n_questions": 5
+      }
+    },
+    "dpr": {
+      "paragraph": {
+        "metrics": {
+          "precision@k": 0.04,
+          "recall@k": 0.2,
+          "f1@k": 0.06666666666666668,
+          "evaluated_questions": 5
+        },
+        "n_questions": 5
+      },
+      "sentence": {
+        "metrics": {
+          "precision@k": 0.04,
+          "recall@k": 0.2,
+          "f1@k": 0.06666666666666668,
+          "evaluated_questions": 5
+        },
+        "n_questions": 5
+      }
+    }
+  },
+  "granularity_compare": {
+    "embeddings": {
+      "mode": "embeddings",
+      "n": 5,
+      "paragraph_hit": 0.2,
+      "sentence_hit": 0.2
+    },
+    "bm25": {
+      "mode": "bm25",
+      "n": 5,
+      "paragraph_hit": 0.4,
+      "sentence_hit": 0.4
+    },
+    "tfidf": {
+      "mode": "tfidf",
+      "n": 5,
+      "paragraph_hit": 0.2,
+      "sentence_hit": 0.6
+    },
+    "lsi": {
+      "mode": "lsi",
+      "n": 5,
+      "paragraph_hit": 0.0,
+      "sentence_hit": 0.0
+    },
+    "dpr": {
+      "mode": "dpr",
+      "n": 5,
+      "paragraph_hit": 0.2,
+      "sentence_hit": 0.2
+    }
+  },
+  "lex_vs_sem": {
+    "lexical_win": 2,
+    "semantic_win": 0,
+    "both_win": 1,
+    "both_lose": 2,
+    "total": 5
+  },
+  "answerability": {
+    "metrics": {
+      "overall": {
+        "total_questions": 5,
+        "accuracy": 0.2,
+        "macro_f1": 0.16666666666666666,
+        "weighted_f1": 0.3333333333333333,
+        "average_confidence": 0.37030948549509046
+      },
+      "answerable": {
+        "count": 5,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333,
+        "support": 5
+      },
+      "unanswerable": {
+        "count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "confusion_matrix": {
+        "true_negative": 1,
+        "false_positive": 4,
+        "false_negative": 0,
+        "true_positive": 0
+      }
+    },
+    "n_questions": 5
+  },
+  "started_at": 1759180896.1785605,
+  "finished_at": 1759182518.436559,
+  "duration_sec": 1622.2579984664917
+}
