@@ -1,5 +1,12 @@
-numpy
-pandas
-scikit-learn
-torch
-transformers
+torch>=1.12.0
+transformers>=4.20.0
+sentence-transformers>=2.2.0
+haystack-ai>=2.0.0
+scikit-learn>=1.1.0
+datasets>=2.0.0
+numpy>=1.21.0
+pandas>=1.4.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+tqdm>=4.64.0
+huggingface-hub>=0.10.0
