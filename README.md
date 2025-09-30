@@ -194,10 +194,6 @@ NLP_II/
 ├── baselines.py              # Implementation of baseline methods (TF-IDF, LSI, DPR, SPLADE)
 ├── compare_results_*.json    # Evaluation results (JSON format)
 ├── requirements.txt          # Python dependencies
-├── tex_final/                # LaTeX report and bibliography
-│   ├── final_report.tex      # Final project report
-│   ├── custom.bib            # Bibliography
-│   └── acl_latex.tex         # ACL template
 └── README.md                 # This file
 ```
 
