@@ -266,6 +266,5 @@ All results can be reproduced using the provided scripts. The evaluation uses a 
 ## Contact
 
 Seyed Alireza Miri (Seyed-Alireza.Miri@stud.uni-regensburg.de)
-Matrikelnummer: 2384735
 Computational Sciences 
 University of Regensburg
