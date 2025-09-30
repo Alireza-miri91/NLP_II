@@ -1,0 +1,18 @@
+{
+  "timestamp": "20250918_194041",
+  "methods": [
+    "tfidf"
+  ],
+  "limit": 50,
+  "k": 5,
+  "parallel": true,
+  "workers": 3,
+  "total_time": 13.619495153427124,
+  "results": {
+    "tfidf": {
+      "hit_at_k": 0.46,
+      "time": 13.619468212127686,
+      "status": "success"
+    }
+  }
+}

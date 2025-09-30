@@ -1,0 +1,54 @@
+{
+  "timestamp": "20250918_201418",
+  "methods": [
+    "tfidf",
+    "lsi",
+    "bm25",
+    "embeddings",
+    "dpr",
+    "splade",
+    "colbert"
+  ],
+  "limit": 500,
+  "k": 5,
+  "parallel": true,
+  "workers": 3,
+  "total_time": 1888.915617465973,
+  "results": {
+    "tfidf": {
+      "hit_at_k": 0.408,
+      "time": 16.029407501220703,
+      "status": "success"
+    },
+    "bm25": {
+      "hit_at_k": 0.396,
+      "time": 22.66183829307556,
+      "status": "success"
+    },
+    "lsi": {
+      "hit_at_k": 0.278,
+      "time": 35.14603400230408,
+      "status": "success"
+    },
+    "embeddings": {
+      "hit_at_k": 0.262,
+      "time": 72.8072292804718,
+      "status": "success"
+    },
+    "splade": {
+      "hit_at_k": 0.428,
+      "time": 59.47589111328125,
+      "status": "success"
+    },
+    "dpr": {
+      "hit_at_k": 0.262,
+      "time": 75.57333827018738,
+      "status": "success"
+    },
+    "colbert": {
+      "hit_at_k": 0.0,
+      "time": 1800,
+      "status": "timeout"
+    }
+  }
+}

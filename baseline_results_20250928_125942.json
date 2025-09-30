@@ -1,0 +1,61 @@
+{
+  "timestamp": "20250928_125942",
+  "methods": [
+    "tfidf",
+    "lsi",
+    "bm25",
+    "embeddings",
+    "dpr",
+    "splade",
+    "colbert"
+  ],
+  "limit": 200,
+  "k": 5,
+  "parallel": true,
+  "workers": 3,
+  "total_time": 13.329429149627686,
+  "results": {
+    "tfidf": {
+      "hit_at_k": 0.0,
+      "time": 4.454451560974121,
+      "status": "error",
+      "error": "Traceback (most recent call last):\n  File \"/home/mis18756/NLP_II/eval_qasper.py\", line 8, in <module>\n    from baselines import TfidfRetriever, LsiRetriever, build_dpr_retriever, SpladeRetriever, ColbertRetriever\nImportError: cannot import name 'ColbertRetriever' from 'baselines' (/home/mis18756/NLP_II/baselines.py)"
+    },
+    "bm25": {
+      "hit_at_k": 0.0,
+      "time": 4.539825677871704,
+      "status": "error",
+      "error": "Traceback (most recent call last):\n  File \"/home/mis18756/NLP_II/eval_qasper.py\", line 8, in <module>\n    from baselines import TfidfRetriever, LsiRetriever, build_dpr_retriever, SpladeRetriever, ColbertRetriever\nImportError: cannot import name 'ColbertRetriever' from 'baselines' (/home/mis18756/NLP_II/baselines.py)"
+    },
+    "lsi": {
+      "hit_at_k": 0.0,
+      "time": 4.592986583709717,
+      "status": "error",
+      "error": "Traceback (most recent call last):\n  File \"/home/mis18756/NLP_II/eval_qasper.py\", line 8, in <module>\n    from baselines import TfidfRetriever, LsiRetriever, build_dpr_retriever, SpladeRetriever, ColbertRetriever\nImportError: cannot import name 'ColbertRetriever' from 'baselines' (/home/mis18756/NLP_II/baselines.py)"
+    },
+    "embeddings": {
+      "hit_at_k": 0.0,
+      "time": 4.666339874267578,
+      "status": "error",
+      "error": "Traceback (most recent call last):\n  File \"/home/mis18756/NLP_II/eval_qasper.py\", line 8, in <module>\n    from baselines import TfidfRetriever, LsiRetriever, build_dpr_retriever, SpladeRetriever, ColbertRetriever\nImportError: cannot import name 'ColbertRetriever' from 'baselines' (/home/mis18756/NLP_II/baselines.py)"
+    },
+    "splade": {
+      "hit_at_k": 0.0,
+      "time": 4.530883073806763,
+      "status": "error",
+      "error": "Traceback (most recent call last):\n  File \"/home/mis18756/NLP_II/eval_qasper.py\", line 8, in <module>\n    from baselines import TfidfRetriever, LsiRetriever, build_dpr_retriever, SpladeRetriever, ColbertRetriever\nImportError: cannot import name 'ColbertRetriever' from 'baselines' (/home/mis18756/NLP_II/baselines.py)"
+    },
+    "dpr": {
+      "hit_at_k": 0.0,
+      "time": 4.649718999862671,
+      "status": "error",
+      "error": "Traceback (most recent call last):\n  File \"/home/mis18756/NLP_II/eval_qasper.py\", line 8, in <module>\n    from baselines import TfidfRetriever, LsiRetriever, build_dpr_retriever, SpladeRetriever, ColbertRetriever\nImportError: cannot import name 'ColbertRetriever' from 'baselines' (/home/mis18756/NLP_II/baselines.py)"
+    },
+    "colbert": {
+      "hit_at_k": 0.0,
+      "time": 4.207722187042236,
+      "status": "error",
+      "error": "Traceback (most recent call last):\n  File \"/home/mis18756/NLP_II/eval_qasper.py\", line 8, in <module>\n    from baselines import TfidfRetriever, LsiRetriever, build_dpr_retriever, SpladeRetriever, ColbertRetriever\nImportError: cannot import name 'ColbertRetriever' from 'baselines' (/home/mis18756/NLP_II/baselines.py)"
+    }
+  }
+}

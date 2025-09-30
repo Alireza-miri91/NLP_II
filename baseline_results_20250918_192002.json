@@ -1,0 +1,51 @@
+{
+  "timestamp": "20250918_192002",
+  "methods": [
+    "tfidf",
+    "lsi",
+    "bm25",
+    "embeddings",
+    "dpr",
+    "splade",
+    "colbert"
+  ],
+  "limit": 50,
+  "k": 5,
+  "results": {
+    "tfidf": {
+      "hit_at_k": 0.46,
+      "time": 13.444522380828857,
+      "status": "success"
+    },
+    "lsi": {
+      "hit_at_k": 0.42,
+      "time": 14.491811037063599,
+      "status": "success"
+    },
+    "bm25": {
+      "hit_at_k": 0.48,
+      "time": 12.850110530853271,
+      "status": "success"
+    },
+    "embeddings": {
+      "hit_at_k": 0.36,
+      "time": 15.155192852020264,
+      "status": "success"
+    },
+    "dpr": {
+      "hit_at_k": 0.36,
+      "time": 18.07977843284607,
+      "status": "success"
+    },
+    "splade": {
+      "hit_at_k": 0.48,
+      "time": 33.27212405204773,
+      "status": "success"
+    },
+    "colbert": {
+      "hit_at_k": 0.5,
+      "time": 257.15975999832153,
+      "status": "success"
+    }
+  }
+}

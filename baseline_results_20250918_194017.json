@@ -1,0 +1,26 @@
+{
+  "timestamp": "20250918_194017",
+  "methods": [
+    "tfidf",
+    "splade"
+  ],
+  "limit": 50,
+  "k": 5,
+  "parallel": true,
+  "workers": 3,
+  "total_time": 6.93228554725647,
+  "results": {
+    "tfidf": {
+      "hit_at_k": 0.0,
+      "time": 6.9158172607421875,
+      "status": "error",
+      "error": "ocument_embedder.py\", line 125, in __init__\n    self.device = ComponentDevice.resolve_device(device)\n                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \"/home/mis18756/miniconda3/lib/python3.13/site-packages/haystack/utils/device.py\", line 449, in resolve_device\n    raise ValueError(\n        f\"Invalid component device type '{type(device).__name__}'. Must either be None or ComponentDevice.\"\n    )\nValueError: Invalid component device type 'str'. Must either be None or ComponentDevice."
+    },
+    "splade": {
+      "hit_at_k": 0.0,
+      "time": 6.9313414096832275,
+      "status": "error",
+      "error": "ocument_embedder.py\", line 125, in __init__\n    self.device = ComponentDevice.resolve_device(device)\n                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \"/home/mis18756/miniconda3/lib/python3.13/site-packages/haystack/utils/device.py\", line 449, in resolve_device\n    raise ValueError(\n        f\"Invalid component device type '{type(device).__name__}'. Must either be None or ComponentDevice.\"\n    )\nValueError: Invalid component device type 'str'. Must either be None or ComponentDevice."
+    }
+  }
+}

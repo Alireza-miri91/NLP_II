@@ -1,0 +1,48 @@
+{
+  "timestamp": "20250928_122820",
+  "methods": [
+    "tfidf",
+    "lsi",
+    "bm25",
+    "embeddings",
+    "dpr",
+    "splade"
+  ],
+  "limit": 200,
+  "k": 5,
+  "parallel": true,
+  "workers": 3,
+  "total_time": 61.958251953125,
+  "results": {
+    "tfidf": {
+      "hit_at_k": 0.415,
+      "time": 16.91902804374695,
+      "status": "success"
+    },
+    "bm25": {
+      "hit_at_k": 0.405,
+      "time": 18.22839641571045,
+      "status": "success"
+    },
+    "lsi": {
+      "hit_at_k": 0.28,
+      "time": 22.51153063774109,
+      "status": "success"
+    },
+    "embeddings": {
+      "hit_at_k": 0.26,
+      "time": 32.76585388183594,
+      "status": "success"
+    },
+    "dpr": {
+      "hit_at_k": 0.26,
+      "time": 38.012369871139526,
+      "status": "success"
+    },
+    "splade": {
+      "hit_at_k": 0.46,
+      "time": 39.44565963745117,
+      "status": "success"
+    }
+  }
+}

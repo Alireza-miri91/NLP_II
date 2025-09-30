@@ -1,0 +1,83 @@
+{
+  "timestamp": "20250928_130840",
+  "methods": [
+    "tfidf",
+    "lsi",
+    "bm25",
+    "embeddings",
+    "dpr",
+    "splade"
+  ],
+  "limit": 50,
+  "k": 5,
+  "parallel": true,
+  "workers": 3,
+  "total_time": 45.830137968063354,
+  "results": {
+    "bm25": {
+      "hit_at_k": 0.48,
+      "time": 14.976391077041626,
+      "status": "success"
+    },
+    "tfidf": {
+      "hit_at_k": 0.46,
+      "time": 15.819746494293213,
+      "status": "success"
+    },
+    "lsi": {
+      "hit_at_k": 0.42,
+      "time": 17.02708625793457,
+      "status": "success"
+    },
+    "embeddings": {
+      "hit_at_k": 0.36,
+      "time": 18.059934377670288,
+      "status": "success"
+    },
+    "dpr": {
+      "hit_at_k": 0.36,
+      "time": 20.345215797424316,
+      "status": "success"
+    },
+    "splade": {
+      "hit_at_k": 0.48,
+      "time": 28.802152633666992,
+      "status": "success"
+    },
+    "answerability": {
+      "methods": [
+        "embeddings",
+        "bm25",
+        "tfidf",
+        "splade"
+      ],
+      "results": [
+        {
+          "mode": "embeddings",
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "error": "'list' object has no attribute 'get'",
+          "time_taken": 11.646034717559814
+        },
+        {
+          "mode": "bm25",
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "error": "Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.",
+          "time_taken": 9.6599440574646
+        },
+        {
+          "mode": "tfidf",
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "error": "Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.",
+          "time_taken": 9.331575393676758
+        },
+        {
+          "mode": "splade",
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "error": "Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.",
+          "time_taken": 2.6360931396484375
+        }
+      ],
+      "time_taken": 12.011378288269043
+    }
+  }
+}
